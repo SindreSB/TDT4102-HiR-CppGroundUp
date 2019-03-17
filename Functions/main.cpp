@@ -21,20 +21,10 @@ int main();
 using namespace std;
 
 //Lag noen funksjoner
-void funkEn() {
-	cout << "Funk 1 kjørte" << endl;
-}
-void funkTo() {
-	cout << "Funk 2 kjørte" << endl;
-}
-void funkTre() {
-	cout << "Funk 3 kjørte" << endl;
-}
 
 // Koden vår begynner her
 int main() {
-	funkEn();
-	funkTo();
+	
 
 	return 0;
 }

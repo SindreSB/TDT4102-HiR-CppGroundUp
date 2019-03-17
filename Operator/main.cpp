@@ -18,16 +18,13 @@ struct Person {
 	string name;
 	int age;
 
-	//Bruker en konstruktør fremfor init
 	Person(string name, int age);
 
+	void print();
 };
 
-// Fremfor print, implementerer vi utskriftsoperatoren
-ostream& operator<<(ostream& os, Person& p) {
-	os << p.name << " er " << p.age << " år gammel.";
-
-	return os;
+void Person::print() {
+	cout << name << " er " << age << " år gammel.";
 }
 
 Person::Person(string name, int age) {
@@ -35,12 +32,8 @@ Person::Person(string name, int age) {
 	age = age;
 }
 
-// Vi ville nok heller skrevet det sånn her, men for å vise 
-// likheten til init() så har vi versjonen over
-// Person::Person(string name, int age) : name{ name }, age{ age } {}
-
 
 int main() {
 	Person persOne("Sindre", 23);
-	cout << persOne;
+	persOne.print();
 }
