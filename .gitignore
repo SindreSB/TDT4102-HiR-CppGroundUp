@@ -42,3 +42,4 @@
 *.user
 *.db
 *.idb
+*.FileListAbsolute.txt

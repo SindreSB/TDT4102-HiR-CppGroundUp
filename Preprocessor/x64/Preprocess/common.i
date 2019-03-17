@@ -1,4 +1,9 @@
-#include "common.h"
+
+
+#pragma once
+
+void common_function();
+
 
 void common_function()
 {

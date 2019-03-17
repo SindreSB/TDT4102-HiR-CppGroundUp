@@ -1,7 +1,5 @@
-#include "one.h"
-#include "two.h"
+#include "common.h"
 
 int main() {
-	foo();
-	bar();
+	common_function();
 }
