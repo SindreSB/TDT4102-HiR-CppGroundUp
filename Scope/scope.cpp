@@ -9,9 +9,6 @@ Hva er i "scope" - altså synlig?
 
 */
 
-// scope.h inneholder en definisjon av a = 3
-// (don't do this at home)
-#include "scope.h"
 
 int b = 3;
 
@@ -22,10 +19,10 @@ int main() {
 		{
 			int e = 6;
 
-			// Her er a, b, c, d, e synlig
+			// Her er b, c, d, e synlig
 		}
-		// Her er a, b, c, d synlig		
+		// Her er b, c, d synlig		
 	}
-	// Her er a, b, c
+	// Her er b, c
 }
-// Her er a og b synlig
+// Her er b synlig
